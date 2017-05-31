@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.arm64
+FROM lsiobase/alpine.arm64:3.6
 MAINTAINER sparklyballs
 
 # set version label
@@ -11,15 +11,15 @@ RUN \
  apk add --no-cache \
 	curl \
 	jq \
-	p7zip \
 	openssl \
+	p7zip \
 	tar \
 	transmission-cli \
 	transmission-daemon \
 	unrar \
 	unzip
 
-# copy local files
+# copy local files
 COPY root/ /
 
 # ports and volumes
