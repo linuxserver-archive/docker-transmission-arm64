@@ -105,6 +105,7 @@ The automatic update will run once a day at 3am local server time.
 
 ## Versions
 
++ **24.11.17:** Clean stop transmission when there are active torrents, fix cron start
 + **25.07.17:** Add rsync package.
 + **31.05.17:** Rebase to alpine 3.6.
 + **15.01.17:** Add p7zip, tar , unrar and unzip packages.
